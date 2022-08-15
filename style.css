@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -667,7 +667,7 @@ font-size: 2.5rem;
 /* conact section */
 
 #contact .contact.container{
-    /* border: 5px solid rgb(230, 25, 240) ; */
+    
     display: flex;
     flex-direction: column;
     max-width: 1200px;
@@ -682,24 +682,26 @@ font-size: 2.5rem;
 #contact .contact-items{
     
     margin-top: -110px;
-    /* border: 2px solid rgb(51, 225, 31) ; */
     display: flex;
     flex-direction: column;
     position: relative;
     justify-content: center;
+    align-content: center;
     /* margin: 0 auto; */
     align-content: center;
     margin-bottom: -220px;
-    width: 60%;  
+    width: 30rem;  
+    min-width: 20rem;
 }
 #contact .contact-item{
-    width: fit-content;
+
     height: auto;
     display: flex;
     text-align: center;
     border-radius: 10px;
     padding: 10px 10px;
     /* padding-top: 25px;  */
+   
     margin: 10px;
     justify-content: flex-start;
     align-items: center;
@@ -709,15 +711,16 @@ font-size: 2.5rem;
     transition: 0.3s ease box-shadow;
 }
 #contact .contact-item .contact-info{
+
     margin:0 20px;
-    /* border: 2px solid red ; */
-    width: min-content;
+   
+    min-width: 18rem;
 }
 #contact .icon{
     /* margin: auto 10px; */
     font-size: 2.5rem;
-    width: fit-content;
-    /* border: 2px solid red ; */
+    width: 20rem;
+    border: 1px solid red ;
     justify-items:flex-start;
     align-content: flex-start;
     background-color: white;
@@ -739,9 +742,9 @@ font-size: 2.5rem;
 
 }
 #contact .icon .fa-location-dot{
-
+    padding: 0 2px;
     color: rgb(100, 169, 147);
-    margin:15px;
+    margin: 15px;
 
 }
 #contact .contact-info h1{
@@ -752,16 +755,17 @@ font-size: 2.5rem;
     text-transform:capitalize; 
     color:rgb(10,121,139) ;
 }
-#contact .contact-info h2 {
+#contact .contact-info h2{
     font-size: 1.8rem;
     line-height: 2rem;
-    font-weight: 500;
     text-align: start;
     text-align: start;
     
 }
 #contact .contact-info h2 a{
-    color: white;
+    font-weight: 500;
+    color:#dddd;
+    font-size: 1.3rem;
 }
 #contact .contact-item:hover{
     box-shadow: 0px 0px 15px 0 #0000002c;
