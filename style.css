@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,700;0,8..60,800;0,8..60,900;1,8..60,200;1,8..60,300;1,8..60,400;1,8..60,500;1,8..60,600;1,8..60,700;1,8..60,800;1,8..60,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,700;0,8..60,800;0,8..60,900;1,8..60,200;1,8..60,300;1,8..60,400;1,8..60,500;1,8..60,600;1,8..60,700;1,8..60,800;1,8..60,900&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -145,10 +147,12 @@ a{
     background-color: crimson;
 }
 /* end hero section */
-.brand{
-    font-size: 3rem;
-    text-transform: uppercase;
+.brand h1{
+    font-size: 6rem;
+    font-weight: 400;
+    text-transform: capitalize;
     color: white;
+    font-family: Source Serif;
     
     
 }
@@ -176,8 +180,10 @@ a{
 }
 
 #header h1{
-    font-size: 2.5rem;
+    font-size: 3.6rem;
     color: white;
+    margin-left: 10px;
+    font-weight: 530;
 }
 #header{
     position:fixed;
@@ -189,16 +195,16 @@ a{
 }
 #header .header{
     min-height: 8vh;
-    background-color: rgba(20, 40, 40, 1);
+    background-color: rgba(19,26,41, 1);
     transition: 0.3s ease background-color;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 #header .header.bluring{
     opacity: 1;
-    box-shadow: 0px 0px 15px 8px rgba(20, 40, 40, 0.8);
+    box-shadow: 0px 0px 15px 8px rgba(19,26,41 0.8);
     /* background-color: rgba(0, 0,0, 1); */
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(2px);
     
 }
 #header .nav-bar{
@@ -222,14 +228,16 @@ a{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    transform: translateX(110%);
+    transform: translateX(120%);
     transition: 0.2s ease transform;
+   
 }
 #header .nav-list ul.active{
     opacity: 1;
     background-color:rgb(31,30,30);
     backdrop-filter: blur(5px);
     transform: translateX(0%);
+
     overflow-y: hidden;
 }
 #header .nav-list ul.active.active1{
@@ -361,7 +369,7 @@ a{
 .section-title{
     margin-bottom: 8px ;
     font-size: 3rem;
-    font-weight: 200;
+    font-weight: 700;
     color: white;
     text-align: center;
     text-transform: uppercase;
@@ -476,11 +484,12 @@ z-index: -1;
 
 
 #projects .projects{
+   
     flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px 0;
-    margin-bottom: 100px;
+    margin-top: 20px;
 }
 #projects .projects-header h1{
     margin-bottom: 5px;
@@ -632,6 +641,20 @@ color: white;
 font-size: 2.5rem;
 
 }
+#about .about .col-right h3{
+    display: inline;
+    color: white;
+    /* font-weight: 500; */
+}
+
+
+#about .about .col-right h3 span,p span{
+    font-family: 'Mali', cursive;
+    font-weight: 600;
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    color: rgb(243, 242, 241);
+}
 #about .col-right .cta{
     color: white;
     margin-bottom: 50px;
@@ -657,8 +680,10 @@ font-size: 2.5rem;
 
 #about .about .col-right p{
     color: white;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
+    font-size: 2.1rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin: 10px 0;
 }
 
 
@@ -666,22 +691,25 @@ font-size: 2.5rem;
 
 /* conact section */
 
-#contact .contact.container{
-    
+#contact .container{
+    /* border:2px solid blue; */
     display: flex;
     flex-direction: column;
     max-width: 1200px;
     margin: 0px auto;
-    height:auto
-    /* margin-bottom: -150px; */
+    /* min-height:80px; */
+    height: fit-content;
+    margin-bottom: -100px;
 }
 
 #contact .contact .section-title{
-    margin-top:-180px;
+    margin-top: -103px;
+    /* border: 2px solid white; */
 }
 #contact .contact-items{
     
-    margin-top: -110px;
+    /* margin-top: -110px; */
+    /* border: 2px solid white; */
     display: flex;
     flex-direction: column;
     position: relative;
@@ -689,7 +717,7 @@ font-size: 2.5rem;
     align-content: center;
     /* margin: 0 auto; */
     align-content: center;
-    margin-bottom: -220px;
+    /* margin-bottom: -220px; */
     width: 30rem;  
     min-width: 20rem;
 }
@@ -699,10 +727,8 @@ font-size: 2.5rem;
     display: flex;
     text-align: center;
     border-radius: 10px;
-    padding: 10px 10px;
-    /* padding-top: 25px;  */
-   
-    margin: 10px;
+    padding: 19px 10px;
+    margin: 9px;
     justify-content: flex-start;
     align-items: center;
     background-image:linear-gradient(60deg, #29323c 0%,#485563 100%);
@@ -719,13 +745,14 @@ font-size: 2.5rem;
 #contact .icon{
     /* margin: auto 10px; */
     font-size: 2.5rem;
-    width: 20rem;
+    width: 6rem;
     border: 1px solid red ;
     justify-items:flex-start;
     align-content: flex-start;
     background-color: white;
     border-radius: 50%;
     position: relative;
+    /* margin: 10px; */
     /* left: -15px; */
 }
 #contact .icon .fa-phone{
@@ -748,12 +775,12 @@ font-size: 2.5rem;
 
 }
 #contact .contact-info h1{
-    font-size: 1.9rem;
+    font-size: 2.4rem;
     text-align: start;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom:5px ;   
     text-transform:capitalize; 
-    color:rgb(10,121,139) ;
+    color:rgb(44, 169, 189) ;
 }
 #contact .contact-info h2{
     font-size: 1.8rem;
@@ -847,9 +874,9 @@ body .uparrow img {
     
 }
 #skill .section-title h1{
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: 0.1rem;
     
 }
@@ -939,9 +966,9 @@ body .uparrow img {
     border-radius: 10px;
   /* border: 2px solid black; */
 
-  color:rgba(12, 0, 248, 0.993);
-  background-color:rgba(67, 127, 205, 0.98);
-  box-shadow: 0px 0px 5px 5px rgba(85, 117, 160, 0.5);
+  color:rgba(251, 251, 252, 0.993);
+  background-color:rgba(67, 127, 205, 0.7);
+  /* box-shadow: 0px 0px 5px 1px rgba(85, 117, 160, 0.5); */
   
 }
 #skill .skills .keyskill .skill-item:nth-child(3){
@@ -951,9 +978,9 @@ body .uparrow img {
     border-radius: 10px;
   /* border: 2px solid black; */
 
-  color:rgb(243, 11, 46);
-  background-color:rgba(143, 58, 66, 0.6);
-  box-shadow: 0px 0px 5px 5px rgb(146, 113, 126);
+  color:rgb(254, 255, 253);
+  background-color:rgba(230, 185, 189, 0.6);
+  /* box-shadow: 0px 0px 5px 1px rgb(146, 113, 126); */
   
 }
 #skill .skills .keyskill .skill-item:nth-child(4){
@@ -963,9 +990,9 @@ body .uparrow img {
     border-radius: 10px;
   /* border: 2px solid black; */
 
-  color:rgb(179, 44, 10);
-  background-color:rgba(237, 130, 103, 0.9);
-  box-shadow: 0px 0px 5px 5px rgba(244, 147, 118, 0.5);
+  color:rgb(249, 245, 244);
+  background-color:rgba(238, 183, 170, 0.9);
+  /* box-shadow: 0px 0px 5px 5px rgba(244, 147, 118, 0.5); */
   
 }
 #skill .skills .keyskill .skill-item:nth-child(5){
@@ -975,9 +1002,9 @@ body .uparrow img {
     border-radius: 10px;
   /* border: 2px solid black; */
 
-  color:rgb(0, 26, 255);
+  color:white;
   background-color:rgba(158, 196, 246, 0.6);
-  box-shadow: 0px 0px 5px 5px rgba(81, 141, 218, 0.5);
+  /* box-shadow: 0px 0px 5px 5px rgba(81, 141, 218, 0.5); */
   
 }
 #skill .skills .keyskill .skill-item:nth-child(6){
@@ -987,9 +1014,9 @@ body .uparrow img {
     border-radius: 10px;
   /* border: 2px solid black; */
 
-  color:rgb(253, 253, 25);
-  background-color:rgba(239, 230, 48, 0.7);
-  box-shadow: 0px 0px 5px 5px #656562;
+  color:white;
+  background-color:rgba(88, 58, 111, 0.7);
+  /* box-shadow: 0px 0px 5px 5px #656562; */
   
 }
 #skill .skills .keyskill .skill-item:nth-child(7){
@@ -999,9 +1026,9 @@ body .uparrow img {
     border-radius: 10px;
   /* border: 2px solid black; */
 
-  color:rgb(255, 8, 99);
-  background-color:rgba(247, 39, 157, 0.5);
-  box-shadow: 0px 0px 5px 5px rgba(245, 65, 194, 0.5);
+  color:white;
+  background-color:rgba(109, 45, 81, 0.5);
+  /* box-shadow: 0px 0px 5px 5px rgba(245, 65, 194, 0.5); */
   
 }
 #skill .skills .keyskill .skill-item:nth-child(8){
@@ -1011,9 +1038,9 @@ body .uparrow img {
     border-radius: 10px;
   /* border: 2px solid black; */
 
-  color:rgb(9,47,97);
-  background-color:rgba(82, 132, 198, 0.5);
-  box-shadow: 0px 0px 5px 5px rgba(100, 167, 255, 0.5);
+  color:white;
+  background-color:rgba(62, 112, 177, 0.5);
+  /* box-shadow: 0px 0px 5px 5px rgba(100, 167, 255, 0.5); */
   
 }
 #skill .skills .keyskill .skill-item:nth-child(9){
@@ -1023,9 +1050,9 @@ body .uparrow img {
     border-radius: 10px;
   /* border: 2px solid black; */
 
-  color:rgb(0,143,149);
-  background-color:rgba(130, 240, 255, 0.98);
-  box-shadow: 0px 0px 5px 5px rgba(3, 234, 250, 0.5);
+  color:white;
+  background-color:rgba(46, 85, 90, 0.98);
+  /* box-shadow: 0px 0px 5px 5px rgba(3, 234, 250, 0.5); */
   
 }
 #skill .skills .keyskill .skill-item:nth-child(10){
@@ -1035,9 +1062,9 @@ body .uparrow img {
     border-radius: 10px;
   /* border: 2px solid black; */
 
-  color:rgb(243, 11, 31);
-  background-color:rgba(202, 29, 29, 0.5);
-  box-shadow: 0px 0px 5px 5px rgba(232, 92, 92, 0.5);
+  color:white;
+  background-color:rgba(75, 14, 14, 0.5);
+  /* box-shadow: 0px 0px 5px 5px rgba(232, 92, 92, 0.5); */
   
 }
 #skill .skills .keyskill .skill-item:nth-child(11){
@@ -1047,9 +1074,9 @@ body .uparrow img {
     border-radius: 10px;
   /* border: 2px solid black; */
 
-  color:rgb(198,95,47);
-  background-color:rgba(255, 177, 112, 0.98);
-  box-shadow: 0px 0px 5px 5px rgba(254, 254, 78, 0.5);
+  color:white;
+  background-color:rgba(96, 86, 78, 0.98);
+  /* box-shadow: 0px 0px 5px 5px rgba(254, 254, 78, 0.5); */
   
 }
 #skill .skills .keyskill:hover .nameskill h2::after{
@@ -1068,9 +1095,9 @@ body .uparrow img {
     margin-top: 15px;
 }
 
-#skill .skills .achi .logo h1{
+#skill .skills .achi .logo h2{
     font-size: 3.25rem;
-    font-weight: 500;
+    font-weight: 700;
     color:white;
     position: relative;
     text-align: center;
@@ -1078,7 +1105,7 @@ body .uparrow img {
     margin: 20px;
     /* /* display: inline-b */
 }
-#skill .skills .achi .logo h1::after{
+#skill .skills .achi .logo h2::after{
     content: ' ';
     width: 80%;
     position: absolute;
@@ -1090,7 +1117,7 @@ body .uparrow img {
     transition: 0.4s ease box-shadow;
     
 }
-#skill .skills .achi:hover .logo h1::after{
+#skill .skills .achi:hover .logo h2::after{
     box-shadow:-1px -1px 16px 3px #05f06f;   
 }
 
@@ -1101,6 +1128,7 @@ body .uparrow img {
     color: #cdf5ff;
     position: relative;
     left: 10px;
+    z-index: 1;
     
     
 }
@@ -1108,12 +1136,11 @@ body .uparrow img {
     content: '';
     width: 0%;
     height: 100%;
-    border-left: 2px solid #e4ece8;
+    border-left: 3px solid #e4ece8;
     position: absolute;
     top: 0;
     border-radius: 100px;
     left: -25px;
-    z-index: 1;
     
 }
 #skill .skills .achi .details .info{
@@ -1127,16 +1154,22 @@ body .uparrow img {
     color: rgb(194,201,210);
     transform: translateX(0px);
     transition: 0.5s ease all;
+    z-index: 2;
 }
-#skill .skills .achi .details .info h1{
+#skill .skills .achi .details .info p{
+    text-transform: capitalize;
     font-size:2rem;
-    font-family:simple;
-    font-weight: 500;
-
+    font-weight: 300;
+    
+}
+#skill .skills .achi .details .info a{
+font-weight:700;
+color: white;
 }
 #skill .skills .achi .details .info .heading{
     display: inline-block;
-    padding: 0 10px;
+    padding: 5px 10px;
+    margin: 5px 0;
     width: auto;
     text-transform: capitalize;
     height: auto;
@@ -1150,28 +1183,28 @@ body .uparrow img {
 
 }
 
-#skill .skills .achi .details .info::after{
+#skill .skills .achi .details .info::before{
     content: '';
-    width: 3%;
-    height: 5%; 
+    width: 13px;
+    height: 13px; 
     background-color: rgb(254, 254, 254);
     position: absolute;
     top: 5px;
     border-radius: 100%;
-    border: 5px solid rgb(45,55,65);
+    border: 5px solid rgb(44,53,64);
     left: -40px;
     
     opacity: 1;
     backdrop-filter: blur(20px);
-    z-index: -1;
+    
     
     
 }
 #skill .skills .achi .details .info:hover::after{
     content: '';
-    width: 3%;
-    height: 5%; 
-    background-color: rgb(23, 21, 21);
+    width: 13px;
+    height: 13px;
+    background-color: transparent;
     position: absolute;
     top: 9px;
     border-radius: 100%;
@@ -1179,9 +1212,9 @@ body .uparrow img {
     left: -36px;
     
     opacity: 1;
-    backdrop-filter: blur(20px);
+    /* backdrop-filter: blur(20px); */
 
-    transform: translateX(10px);
+    /* transform: translateX(10px); */
     animation: hamburger_pulse 0.8s ease infinite;
     z-index: 1;
 }
@@ -1299,14 +1332,15 @@ body .uparrow img {
     }
     #about .col-left .about-img{
         border: 10px solid rgba(17,24,39,0.988);
-        width: 100%;
-        left: 1px;
+        width: 332%;
         top: 1px;
        
     }
     #about .col-right{
         text-align: left;
         padding: 30px;
+        position: relative;
+    left: 190px;
     }
     #about .col-right h1{
         text-align: left;
@@ -1416,5 +1450,61 @@ body .uparrow img {
     #header .nav-list ul a::after{
         display: none;
     }
+    #skill .skills {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+  
+       
+        
+    }
+    #skill .skills .keyskill{
+        
+        position: relative;
+        width: 30%;
+        height: 55rem;
+        padding: 30px 53px;
+        
+
+        top: -8px;
+        left: -50px;
+        
+    }
+    #skill .skills .keyskill .skill-item{
+        
+    margin: -50px 10px;
     
+    
+    }
+    #skill .skills .achi{
+        width: 30%;
+        height: 55rem;
+        padding: 30px;
+    }
+    #skill .skills .achi .logo{
+        position: relative;
+        top: -26px;
+    }
+    #skill .skills .achi .details{
+     overflow: scroll;
+     overflow-x: hidden;
+    }
+    #skill .skills .achi .details::-webkit-scrollbar{
+        /* background-color: red; */
+        width: .3vw;
+    
+      
+    }
+    #skill .skills .achi .details::-webkit-scrollbar-track{
+        background-color: transparent;
+    }
+    #skill .skills .achi .details::-webkit-scrollbar-thumb{
+        background-image: linear-gradient(180deg, #D0368A 0%, #708AD4 99%);
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+    border-radius: 100px;
+    }
+
+
+
+
 }

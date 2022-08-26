@@ -3,7 +3,25 @@ const mobile_menu = document.querySelector(".header .nav-bar .nav-list ul");
 const header = document.querySelector(".header");
 const closeall=document.querySelector(".header .nav-list ul");
 const header_bc_color=document.querySelector("#header .mainbc");
+var vlaue_heading=document.getElementById("wish");
 var goup = document.getElementsByClassName('uparrow')
+var time =new Date();
+var hrs=time.getHours();
+console.log(hrs);
+if(hrs<12)
+{
+    vlaue_heading.textContent="good morning";
+    console.log("good morning");
+}
+else if(hrs<14)
+{
+    vlaue_heading.textContent="good noon";
+    console.log("noon");
+}
+else if(hrs>14){
+    vlaue_heading.textContent="good evening";
+    console.log("good evening");
+}
 hamburder.addEventListener('click', () => {
 
     hamburder.classList.toggle('active');
@@ -31,7 +49,7 @@ document.addEventListener('scroll', () => {
         header.classList.add("bluring");
         // header.style.backgroundColor = '#3c4652';
         goup[0].style.transform = 'scale(1)';
-        header_bc_color.style.backgroundColor='rgba(20, 40, 40, 0.75)';
+        header_bc_color.style.backgroundColor='rgba(19,26,41, 0.75)';
         
     }
     else {
