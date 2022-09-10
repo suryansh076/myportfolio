@@ -13,12 +13,12 @@ if(hrs<12)
     vlaue_heading.textContent="good morning";
     console.log("good morning");
 }
-else if(hrs<14)
+else if(hrs>12 && hrs<16)
 {
     vlaue_heading.textContent="good noon";
     console.log("noon");
 }
-else if(hrs>14){
+else if(hrs>=16){
     vlaue_heading.textContent="good evening";
     console.log("good evening");
 }
