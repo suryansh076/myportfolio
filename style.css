@@ -688,19 +688,20 @@ hr {
     min-height:36px;
     width: fit-content;
     padding: 3px 15px;
-    margin: 19px 0;
+    margin-top: 15px;
     border-radius: 5px;
     text-transform: capitalize;
     text-align: center;
 }
 #projects .all-projects .projects-item .probtncls{
     display: flex;
-    flex-direction:row;
+    flex-direction:column;
     padding: 10px -1px;
 }
 #projects .all-projects .projects-item .probtncls a{
     margin-right:20px;
 }
+
 
 
 #projects .all-projects .projects-info a h2{
