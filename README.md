@@ -17,4 +17,5 @@ Build a  website in 2 days to showcase the following:
 * JavaScript
 * Git
 * GitHub
- [Visit portfolio](https://www.quora.com)
+
+ ##[Visit portfolio](https://suryansh076.github.io/myportfolio/)
