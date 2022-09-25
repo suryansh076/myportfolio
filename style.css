@@ -80,7 +80,7 @@ a {
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: .7;
+    opacity: 0;
     z-index: -1;
 }
 
