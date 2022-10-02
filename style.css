@@ -418,8 +418,8 @@ a {
 }
 
 .mouse {
-	width: 26px;
-	height: 60px;
+    width: 32px;
+    height: 55px;
 	border: 3px solid rgb(248, 246, 246);
 	border-radius: 60px;
 	position: relative;
