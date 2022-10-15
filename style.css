@@ -827,7 +827,7 @@ p span {
 }
 
 #about .col-left .about-img {
-    height: 100%;
+    height: 100.1%;
     width: 100%;
     position: relative;
     border: 10px solid rgba(17, 24, 39, 0.988);
@@ -1583,7 +1583,7 @@ body .uparrow img {
     #about .col-left .about-img {
         border: 10px solid rgba(17, 24, 39, 0.988);
         width: 332%;
-        top: 1px;
+        top: 3px;
 
     }
 
