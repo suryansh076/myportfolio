@@ -1,5 +1,5 @@
 
-This is a website built to showcase my technical skills, web design skills.
+This is a website built to showcase my technical and web design skills.
 
 
 
